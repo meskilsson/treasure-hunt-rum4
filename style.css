@@ -7,7 +7,9 @@
   color: white;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  margin-right: 40px;
+  word-spacing: 2px;
+  justify-content:space-around;
   font-weight: bold;
 }
 body {
@@ -45,6 +47,15 @@ text-align: center;
 }
 
 .found {
-  opacity: 0.4;
+  opacity: 1;
   filter: grayscale(100%);
+  color: goldenrod;
+  text-shadow: 0 0 8px gold;
+}
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-style: italic;
 }
