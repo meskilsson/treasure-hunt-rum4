@@ -1,12 +1,31 @@
 #hud {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #333;
-      color: white;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6e3;
+  color: black;
+  margin: 0;
+  padding: 2rem;
+  list-style: 1.6;
+}
+h1,
+h2{
+  text-align: center;
+  color: #5a3e1b;
+}
+p{
+text-align: center;
+}
+.treasure hidden{
+  opacity: 0;
+}
