@@ -34,12 +34,12 @@ treasure1.addEventListener("click", () => {
   foundCount++;
   foundCountEl.textContent = foundCount;
   alert("Grattis! Du hittade en skatt!");
-  treasure2.hidden = false;
-  treasure2.classList.remove("hidden");
-if (getComputedStyle(treasure2).display === "none") {
-    treasure2.style.display = "block";
+  treasure1.hidden = false;
+  treasure1.classList.remove("hidden");
+if (getComputedStyle(treasure1).display === "none") {
+    treasure1.style.display = "block";
 }
-  treasure2.style.visibility = "visible";
+  treasure1.style.visibility = "visible";
     checkAllFound();
 });
 
