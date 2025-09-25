@@ -37,11 +37,11 @@ text-align: center;
 
 .hidden::before {
   content: "💎";
-  display: none;       /* helt osynlig, inget mellanrum */
+  display: none;
 }
 
 .hidden:hover::before {
-  display: inline;     /* dyker upp först på hover */
+  display: inline;
 }
 
 .found {
