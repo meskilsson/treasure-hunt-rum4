@@ -24,11 +24,22 @@ function checkAllFound() {
 // --- Här ska ni lägga in era egna skatter --- //
 // Exempel: skatt 1
 const treasure1 = document.getElementById("treasure1");
+
+let treasure1Found = false;
+
 treasure1.addEventListener("click", () => {
+    if(treasure1Found) return;
+    treasure1Found = true;
   treasure1.style.color = "red";
   foundCount++;
   foundCountEl.textContent = foundCount;
   alert("Grattis! Du hittade en skatt!");
+  treasure2.hidden = false;
+  treasure2.classList.remove("hidden");
+if (getComputedStyle(treasure2).display === "none") {
+    treasure2.style.display = "block";
+}
+  treasure2.style.visibility = "visible";
     checkAllFound();
 });
 
