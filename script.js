@@ -31,7 +31,7 @@ treasure1.addEventListener("click", () => {
     if(treasure1Found) return;
     treasure1Found = true;
   treasure1.style.color = "red";
-  treasure2.textContent = "💎";
+  treasure1.textContent = "💎";
   foundCount++;
   foundCountEl.textContent = foundCount;
   alert("Grattis! Du hittade en skatt!");
