@@ -36,18 +36,33 @@ treasure1.addEventListener("click", () => {
 const treasure2 = document.getElementById("treasure2");
 treasure2.addEventListener("click", () => {
   treasure2.style.color = "blue";
+  treasure2.textContent = "💎"; 
   foundCount++;
   foundCountEl.textContent = foundCount;
   alert("Grattis! Du hittade en skatt!");
-  checkAllFound();
+  treasure2.hidden = false;
+  treasure2.classList.remove("hidden");
+if (getComputedStyle(treasure2).display === "none") {
+    treasure2.style.display = "block";
+}
+  treasure2.style.visibility = "visible";
+    checkAllFound();
+  
 });
 
 const treasure3 = document.getElementById("treasure3");
 treasure3.addEventListener('click', () => {
-  treasure3.innerHTML = "<h2>Du hittade en skatt!</h2>";
+  treasure3.innerHTML = "<h1>Du hittade en skatt!</h1>"; 
+  const heading = treasure3.querySelector("h1");
+  heading.style.color = "blue";
   foundCount++;
   foundCountEl.textContent = foundCount;
-  alert("Grattis! Du hittade en skatt!");
+  treasure3.hidden = false;
+  treasure3.classList.remove("hidden");
+if (getComputedStyle(treasure3).display === "none") {
+    treasure3.style.display = "block";
+}
+  treasure3.style.visibility = "visible";
   checkAllFound();
 })
 
